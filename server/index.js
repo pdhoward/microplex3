@@ -1,6 +1,5 @@
 // express
 
-
 import express              from 'express';
 import { graphqlExpress,
          graphiqlExpress }  from 'graphql-server-express';

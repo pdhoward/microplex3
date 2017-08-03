@@ -1,9 +1,9 @@
 
 // import neo4j driver
-const neo4j =         require('neo4j-driver').v1;
+import {v1 as neo4J}    from 'neo4j-driver';
 
 //let driver = neo4j.driver("bolt://54.236.8.156:33471", neo4j.auth.basic("neo4j", "carburetor-requirement-kick"));
-let driver = neo4j.driver("bolt://localhost:7474", neo4j.auth.basic("neo4j", "nashv1ll"));
+let driver = neo4j.driver("bolt://localhost:7474", neo4j.auth.basic("neo4j", "nashv1ll");
 const resolveFunctions = {
   Query: {
     movies(_, params) {
