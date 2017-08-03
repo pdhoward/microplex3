@@ -1,6 +1,7 @@
-import { makeExecutableSchema } from 'graphql-tools';
+// define the types and graphql queries for our api
 
-import resolvers from './resolvers';
+import { makeExecutableSchema } from 'graphql-tools';
+import resolvers                from './resolvers';
 
 const schema = `
 type Movie {
