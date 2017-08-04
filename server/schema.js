@@ -5,14 +5,27 @@ import resolvers                from './resolvers';
 
 const schema = `
 type Movie {
-  movieId: String!
+  movieId: String
   title: String
-  year: Int
-  plot: String
-  poster: String
-  imdbRating: Float
-  genres: [String]
-  similar: [Movie]
+  released: Int
+  tagline: String
+  actors: [Actor]
+  directors: [Director]
+}
+type Person {
+  name: ID!
+  born: Int
+  movies: [Movie]
+}
+type Actor {
+  name: ID!
+  born: Int
+  movies: [Movie]
+}
+type Director {
+  name: ID!
+  born: Int
+  movies: [Movie]
 }
 
 type Query {
